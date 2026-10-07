@@ -96,46 +96,110 @@ st.markdown("""
     }
 
     .card {
-        background: #FFFFFF;
-        border: 1px solid #E2E8F0;
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin-bottom: 1.2rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        background: #1E293B !important;
+        border: 1px solid #334155 !important;
+        border-radius: 14px !important;
+        padding: 1.6rem !important;
+        margin-bottom: 1.4rem !important;
+        box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.4) !important;
+        color: #F8FAFC !important;
+    }
+    .card h1, .card h2, .card h3 {
+        color: #38BDF8 !important;
+    }
+    .card h4 {
+        color: #E2E8F0 !important;
+    }
+    .card p, .card span, .card li, .card ol, .card ul, .card div {
+        color: #CBD5E1 !important;
+        line-height: 1.6 !important;
+    }
+    .card strong {
+        color: #F8FAFC !important;
     }
     
     .card-dark {
-        background: #0F172A;
-        border: 1px solid #334155;
-        border-radius: 12px;
-        padding: 1.5rem;
-        color: #F1F5F9;
-        margin-bottom: 1.2rem;
+        background: #0B1329 !important;
+        border: 1px solid #334155 !important;
+        border-radius: 14px !important;
+        padding: 1.6rem !important;
+        color: #F1F5F9 !important;
+        margin-bottom: 1.4rem !important;
+    }
+    .card-dark h1, .card-dark h2, .card-dark h3 {
+        color: #38BDF8 !important;
+    }
+    .card-dark p, .card-dark span, .card-dark strong {
+        color: #F1F5F9 !important;
     }
     
     .card-accent {
-        background: #F0FDF4;
-        border-left: 5px solid #16A34A;
-        border-radius: 8px;
-        padding: 1.2rem;
-        margin: 1rem 0;
+        background: #022C22 !important;
+        border: 1px solid #10B981 !important;
+        border-left: 6px solid #10B981 !important;
+        border-radius: 12px !important;
+        padding: 1.4rem !important;
+        margin: 1.2rem 0 !important;
+    }
+    .card-accent h1, .card-accent h2, .card-accent h3, .card-accent h4 {
+        color: #6EE7B7 !important;
+        margin-top: 0 !important;
+    }
+    .card-accent p, .card-accent span, .card-accent div, .card-accent strong, .card-accent em {
+        color: #ECFDF5 !important;
+        font-size: 1.05rem !important;
+        line-height: 1.5 !important;
     }
 
     .card-warning {
-        background: #FFFBEB;
-        border-left: 5px solid #D97706;
-        border-radius: 8px;
-        padding: 1.2rem;
-        margin: 1rem 0;
+        background: #2A1705 !important;
+        border: 2px solid #F59E0B !important;
+        border-left: 8px solid #F59E0B !important;
+        border-radius: 12px !important;
+        padding: 1.4rem 1.6rem !important;
+        margin: 1.2rem 0 !important;
+        box-shadow: 0 4px 15px -2px rgba(245, 158, 11, 0.25) !important;
+    }
+    .card-warning h1, .card-warning h2, .card-warning h3, .card-warning h4 {
+        color: #FCD34D !important;
+        margin-top: 0 !important;
+        font-weight: 700 !important;
+        font-size: 1.2rem !important;
+    }
+    .card-warning p, .card-warning span, .card-warning div, .card-warning strong, .card-warning em {
+        color: #FFFBEB !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        line-height: 1.65 !important;
     }
 
     .card-danger {
-        background: #FEF2F2;
-        border-left: 5px solid #DC2626;
-        border-radius: 8px;
-        padding: 1.2rem;
-        margin: 1rem 0;
+        background: #450A0A !important;
+        border: 1px solid #EF4444 !important;
+        border-left: 6px solid #EF4444 !important;
+        border-radius: 12px !important;
+        padding: 1.4rem !important;
+        margin: 1.2rem 0 !important;
+    }
+    .card-danger h1, .card-danger h2, .card-danger h3, .card-danger h4 {
+        color: #FCA5A5 !important;
+        margin-top: 0 !important;
+    }
+    .card-danger p, .card-danger span, .card-danger div, .card-danger strong, .card-danger em {
+        color: #FEF2F2 !important;
+        font-size: 1.05rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .metric-chip {
+        display: inline-block;
+        background: #1E293B !important;
+        color: #38BDF8 !important;
+        border: 1px solid #0284C7 !important;
+        border-radius: 8px !important;
+        padding: 0.6rem 1rem !important;
+        margin: 0.3rem !important;
+        font-weight: 600 !important;
     }
 
     .metric-chip {
@@ -355,9 +419,9 @@ with tabs[0]:
     """)
 
     st.markdown("""
-    <div class="card-warning">
-        <h4 style="margin-top:0; color: #92400E;">⚠️ AFIRMACIÓN PROVOCADORA EN PANTALLA:</h4>
-        <p style="font-size: 1.15rem; font-style: italic; margin-bottom: 0;">
+    <div class="card-warning" style="background: #2A1705 !important; border: 2px solid #F59E0B !important; border-left: 8px solid #F59E0B !important; border-radius: 12px !important; padding: 1.4rem 1.6rem !important;">
+        <h4 style="margin-top:0; color: #FCD34D !important; font-size: 1.25rem !important; font-weight: 700 !important; letter-spacing: -0.01em;">⚠️ AFIRMACIÓN PROVOCADORA EN PANTALLA:</h4>
+        <p style="font-size: 1.25rem !important; font-style: italic !important; margin-bottom: 0 !important; color: #FFFBEB !important; font-weight: 600 !important; line-height: 1.65 !important;">
         "Si un banco comercial privado en Costa Rica registra utilidades contables elevadas y toda su cartera de créditos de consumo cuenta con un 100% de cobertura en garantías hipotecarias reales, la SUGEF lo ubicará automáticamente en Grado de Normalidad N1."
         </p>
     </div>
@@ -436,7 +500,7 @@ with tabs[1]:
     with col1:
         st.markdown("""
         <div class="card">
-            <h3 style="color: #4338CA; margin-top:0;">📋 Nivel Micro: Las 5 C del Crédito (Morales Castro)</h3>
+            <h3 style="color: #818CF8 !important; margin-top:0;">📋 Nivel Micro: Las 5 C del Crédito (Morales Castro)</h3>
             <p>Se enfoca en la probabilidad de incumplimiento de un deudor específico antes y durante el desembolso:</p>
             <ol>
                 <li><strong>Conducta (Calidad Moral):</strong> Historial en el buró crediticio (últimos 24 meses), veracidad de la información y cumplimiento de contratos.</li>
@@ -445,8 +509,8 @@ with tabs[1]:
                 <li><strong>Colateral (Garantías):</strong> Prendas, hipotecas o fideicomisos como <em>fuente secundaria o alterna</em> en caso de quiebra.</li>
                 <li><strong>Condiciones:</strong> Sensibilidad del cliente al ciclo económico, sector de actividad y contexto del país.</li>
             </ol>
-            <div style="background: #EEF2FF; padding: 10px; border-radius: 8px; font-size: 0.88rem; color: #3730A3;">
-                <strong>Regla de oro de Morales Castro:</strong> Un crédito nunca debe otorgarse basándose únicamente en el colateral; la fuente primaria de pago SIEMPRE debe ser el flujo operativo.
+            <div style="background: rgba(99, 102, 241, 0.18) !important; border: 1px solid #6366F1 !important; padding: 12px !important; border-radius: 8px !important; font-size: 0.9rem !important; color: #E0E7FF !important;">
+                <strong style="color: #FFFFFF !important;">Regla de oro de Morales Castro:</strong> Un crédito nunca debe otorgarse basándose únicamente en el colateral; la fuente primaria de pago SIEMPRE debe ser el flujo operativo.
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -454,7 +518,7 @@ with tabs[1]:
     with col2:
         st.markdown("""
         <div class="card">
-            <h3 style="color: #0F766E; margin-top:0;">🏛️ Nivel Macro: Metodología GREAC (Acuerdo SUGEF 24-22)</h3>
+            <h3 style="color: #2DD4BF !important; margin-top:0;">🏛️ Nivel Macro: Metodología GREAC (Acuerdo SUGEF 24-22)</h3>
             <p>Califica la solidez estructural y gobernanza del intermediario financiero bajo 5 pilares estratégicos:</p>
             <ol>
                 <li><strong>G - Gobierno Corporativo:</strong> Calidad de la Junta Directiva, ética, transparencia y límites contra la toma imprudente de riesgos.</li>
@@ -463,8 +527,8 @@ with tabs[1]:
                 <li><strong>A - Ambiente de Cumplimiento:</strong> Apego estricto al marco legal, prevención de legitimación de capitales y mandatos de supervisión.</li>
                 <li><strong>C - Capital Base y Suficiencia:</strong> Patrimonio neto disponible y coeficiente de suficiencia patrimonial para absorber pérdidas no esperadas.</li>
             </ol>
-            <div style="background: #F0FDFA; padding: 10px; border-radius: 8px; font-size: 0.88rem; color: #115E59;">
-                <strong>Mapeo de Solvencia:</strong> Clasifica en <strong>Normalidad (N1, N2, N3)</strong> o en <strong>Irregularidad (IRR1, IRR2, IRR3)</strong>, pudiendo desencadenar planes obligatorios de saneamiento o intervención judicial.
+            <div style="background: rgba(13, 148, 136, 0.18) !important; border: 1px solid #0D9488 !important; padding: 12px !important; border-radius: 8px !important; font-size: 0.9rem !important; color: #CCFBF1 !important;">
+                <strong style="color: #FFFFFF !important;">Mapeo de Solvencia:</strong> Clasifica en <strong>Normalidad (N1, N2, N3)</strong> o en <strong>Irregularidad (IRR1, IRR2, IRR3)</strong>, pudiendo desencadenar planes obligatorios de saneamiento o intervención judicial.
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -523,10 +587,10 @@ with tabs[1]:
 # =============================================================================
 with tabs[2]:
     st.markdown("""
-    <div class="card" style="border-top: 4px solid #0284C7;">
+    <div class="card" style="border-top: 4px solid #0284C7 !important;">
         <span class="badge-uia">Metodología Pedagógica: Case Method</span>
-        <h2 style="color: #0F172A; margin: 0.3rem 0;">1) Título del Case Study</h2>
-        <h3 style="color: #0369A1; margin-top:0;">El Dilema de Banco Promotor: La Ilusión de las Utilidades Contables, el Espejismo de la Hipoteca y el Choque Supervisor GREAC</h3>
+        <h2 style="color: #F8FAFC !important; margin: 0.3rem 0;">1) Título del Case Study</h2>
+        <h3 style="color: #38BDF8 !important; margin-top:0;">El Dilema de Banco Promotor: La Ilusión de las Utilidades Contables, el Espejismo de la Hipoteca y el Choque Supervisor GREAC</h3>
     </div>
     """, unsafe_allow_html=True)
 
